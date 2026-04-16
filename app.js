@@ -1,29 +1,26 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  deleteDoc,
-  doc,
-  onSnapshot
-} from "https://www.gstatic.com/firebasejs/12.12.0/firebase-firestore.js";
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
-// إعداد Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyBS8UlW9KCkrP4FspB9azu63srStuCR0tU",
-  authDomain: "cafe-menu-3898b.firebaseapp.com",
-  projectId: "cafe-menu-3898b",
-  storageBucket: "cafe-menu-3898b.firebasestorage.app",
-  messagingSenderId: "606722530073",
-  appId: "1:606722530073:web:29a7eacd500e0463488388",
-  measurementId: "G-XS7Y5LFDY1"
-};
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBeEV-FZ636w7ib4wkif9psNGCx80fjVV8",
+    authDomain: "t-marketing-b8446.firebaseapp.com",
+    projectId: "t-marketing-b8446",
+    storageBucket: "t-marketing-b8446.firebasestorage.app",
+    messagingSenderId: "972362540768",
+    appId: "1:972362540768:web:0b4ae5e847b271947dd285",
+    measurementId: "G-9YQMBKVDPZ"
+  };
 
-const app = initializeApp(firebaseConfig);
-const db = getFirestore(app);
-const itemsCollection = collection(db, "menu");
-
-console.log("Firebase module loaded", { projectId: firebaseConfig.projectId });
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 
 // وظائف لوحة التحكم
 async function addItem() {
