@@ -53,3 +53,34 @@ img { border-radius: 8px; margin-left: 10px; }
   height: 650px;
   margin-top: 2px;
 } 
+
+#cartBtn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: orange;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cartPopup {
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  width: 300px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: white;
+  border: 2px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
